@@ -52,7 +52,7 @@ alarm_model = BayesianNetwork(
     ]
 )
 ```
-# Defining the parameters using CPT
+### Defining the parameters using CPT
 ```
 from pgmpy.factors.discrete import TabularCPD
 
@@ -84,7 +84,7 @@ cpd_marycalls = TabularCPD(
     evidence_card=[2],
 )
 ```
-# Associating the parameters with the model structure
+### Associating the parameters with the model structure
 ```
 alarm_model.add_cpds(
     cpd_burglary, cpd_earthquake, cpd_alarm, cpd_johncalls, cpd_marycalls
